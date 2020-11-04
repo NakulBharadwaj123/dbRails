@@ -1,6 +1,6 @@
-<h1> CREATE A NEW ARTICLE </h1>
+<h1> EDIT ARTICLE </h1>
 
-<%= form_with scope: :article, url: articles_path, local: true do |f| %>
+<%= form_with(model: @article, local: true) do |f| %>
 
     <p>
         <%= f.label :title %><br/>
@@ -17,4 +17,3 @@
     </p>
 
     <% end %>
-    
